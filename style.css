@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #333;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "itc-bradley-hand-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Features */
+.feature {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: "itc-bradley-hand-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.feature-image {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-image img {
+    max-width: 450px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#darkBtn {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+body.dark {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+body.dark .feature-text p {
+    font-size: 18px;
+    color: #f0f0f0;
+    line-height: 1.7;
+}
+
+body.dark .hero {
+    background: #121212;
+}
+
+body.dark .footer {
+    background: #1e1e1e;
+    color: #aaa;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .feature {
+        flex-direction: column !important;
+        padding: 40px 20px;
+    }
+
+    .feature-text h2,
+    .feature-text p {
+        text-align: center;
+    }
+
+    .feature-text h2 {
+        font-size: 24px;
+    }
+
+    .feature-text p {
+        font-size: 16px;
+    }
+}
