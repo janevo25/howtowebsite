@@ -6,9 +6,7 @@ images.forEach((img) => {
     const hoverSrc = img.dataset.hover;
 
     img.addEventListener('mouseenter', () => {
-        if (hoverSrc && !document.body.classList.contains('dark')) {
             if (hoverSrc) img.src = hoverSrc;
-        }
     });
 
     img.addEventListener('mouseleave', () => {
